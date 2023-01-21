@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/montserrat-medium-webfont.woff") format("woff"),
+    url("../fonts/montserrat-bold-webfont.woff") format("woff"),
+    url("../fonts/montserrat-bolditalic-webfont.woff") format("woff"),
+    url("../fonts/montserrat-italic-webfont.woff") format("woff"),
+    url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --pr-color: rgba(0, 141, 173, 1);
+}
+
+body.body {
+  font-family: "montserrat", sans-serif !important;
+  background-color: #21272f !important;
+}
+
+/* Navbar */
+.navbar-brand.nav-brand {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar-brand.nav-brand span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--pr-color);
+}
+
+ul.navbar-nav.mx-auto li.nav-item a.nav-link {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul.navbar-nav.mx-auto li.nav-item a.nav-link.active {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--pr-color);
+  border-bottom: 2px solid var(--pr-color);
+}
+
+/* End Navbar */
