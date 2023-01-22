@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="asset/css/style.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="asset/css/icons.css" />
 
     <!-- Shortcut Icon -->
     <link
@@ -47,7 +50,7 @@
               <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="$about">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
           </ul>
         </div>
@@ -56,11 +59,46 @@
     <!-- End Navbar -->
 
     <!-- Hero Section -->
+    <div class="container hero-section">
+      <div class="row">
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <div class="col-lg-6">
+              <h4>Hello, <span>I'm</span></h4>
+              <h2>M. Abdul Rahman</h2>
+              <p>
+                I'm a web developer from Kisaran, Sumatera Utara, Indonesia
+                <span class="fi fi-id"></span>
+              </p>
+              <a class="btn align-items-center" href="#contact">Let's Talk</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="avatar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row social-media">
+        <p>Check Out My Social Media :</p>
+        <div class="icon">
+          <a href="https://www.instagram.com/abd_rahman.02" target="_blank">
+            <i data-feather="instagram"></i>
+          </a>
 
+          <a href="https://github.com/abdrahman02" target="_blank">
+            <i data-feather="github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- End Hero Section -->
 
     <script src="asset/js/jquery-3.6.3.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/myscript.js"></script>
+    <script src="asset/icons/feather-icon/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

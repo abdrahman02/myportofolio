@@ -12,16 +12,29 @@
 
 :root {
   --pr-color: rgba(0, 141, 173, 1);
+  --scnd-color: rgb(188, 192, 188);
 }
 
 body.body {
   font-family: "montserrat", sans-serif !important;
   background-color: #21272f !important;
+  letter-spacing: 0;
+  text-shadow: 0 0 1px var(--scnd-color);
+}
+
+.icon {
+  color: var(--scnd-color);
+}
+
+.icon a {
+  color: var(--scnd-color);
 }
 
 /* Navbar */
 .navbar-brand.nav-brand {
   font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-style: italic;
 }
@@ -34,14 +47,87 @@ body.body {
 
 ul.navbar-nav.mx-auto li.nav-item a.nav-link {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  color: var(--scnd-color);
 }
 
 ul.navbar-nav.mx-auto li.nav-item a.nav-link.active {
   font-size: 16px;
   font-weight: 500;
   color: var(--pr-color);
-  border-bottom: 2px solid var(--pr-color);
+  text-shadow: 0 0 5px var(--pr-color);
+}
+/* End of Navbar */
+
+/* Hero Section */
+.card.bg-transparent {
+  border: none;
+  margin-top: 60px;
 }
 
-/* End Navbar */
+.card .card-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 20px;
+}
+
+.card-body .col-lg-6 h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--scnd-color);
+}
+
+.card-body .col-lg-6 h4 span {
+  color: var(--pr-color);
+}
+
+.card-body .col-lg-6 h2 {
+  font-weight: 700;
+  color: var(--pr-color);
+}
+
+.card-body .col-lg-6 p {
+  font-weight: 300;
+  color: var(--scnd-color);
+}
+
+.card-body .col-lg-6 a.btn {
+  width: 130px;
+  border-radius: 15px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 18px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--pr-color),
+    rgb(19, 176, 211)
+  );
+  box-shadow: 0 1px 20px var(--pr-color);
+}
+
+.card-body .col-lg-6 .avatar {
+  width: 270px;
+  height: 270px;
+  margin-left: 250px;
+  border-radius: 50%;
+  background-color: var(--pr-color);
+  background-image: url("../img/profile-squared.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 20px var(--pr-color);
+}
+
+.row.social-media {
+  line-height: 5px;
+  margin-left: 20px;
+}
+
+.row.social-media p {
+  color: var(--scnd-color);
+}
+
+.row.social-media .icon a {
+  margin-right: 10px;
+}
+/* End of Hero Section */
