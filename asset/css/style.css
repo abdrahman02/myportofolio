@@ -20,6 +20,7 @@ body.body {
   background-color: #21272f !important;
   letter-spacing: 0;
   text-shadow: 0 0 1px var(--scnd-color);
+  margin-bottom: 5000px;
 }
 
 .icon {
@@ -60,29 +61,30 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link.active {
 /* End of Navbar */
 
 /* Hero Section */
-.card.bg-transparent {
+.container.hero-section {
+  padding-top: 150px;
+}
+.container.hero-section .row .card.bg-transparent,
+.container.expertise-section .row .card.bg-transparent {
   border: none;
-  margin-top: 60px;
 }
 
 .card .card-body {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin-left: 20px;
 }
 
-.card-body .col-lg-6 h4 {
-  font-size: 22px;
+.card-body .col-lg-6 h3 {
   font-weight: 500;
   color: var(--scnd-color);
 }
 
-.card-body .col-lg-6 h4 span {
+.card-body .col-lg-6 h3 span {
   color: var(--pr-color);
 }
 
-.card-body .col-lg-6 h2 {
+.card-body .col-lg-6 h1 {
   font-weight: 700;
   color: var(--pr-color);
 }
@@ -130,4 +132,93 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link.active {
 .row.social-media .icon a {
   margin-right: 10px;
 }
+
+.row.arrow {
+  justify-content: center;
+}
+
+.row.arrow svg {
+  color: var(--pr-color);
+  width: 100px;
+  height: 100px;
+}
 /* End of Hero Section */
+
+/* Expertise Section */
+.container.expertise-section {
+  padding-top: 90px;
+  line-height: 40px;
+}
+
+.container.expertise-section .row h2 {
+  color: var(--pr-color);
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.container.expertise-section .row h2 span {
+  color: var(--scnd-color);
+}
+
+.container.expertise-section .row .card .card-body {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container.expertise-section .row .card .card-body h3 {
+  color: var(--pr-color);
+}
+
+.container.expertise-section .row .card .card-body ul {
+  color: var(--scnd-color);
+  width: 100%;
+}
+
+.container.expertise-section .row .card .card-body ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container.expertise-section .row .card .card-body ul li .col-lg-6 {
+  display: flex;
+}
+
+.container.expertise-section .row .card .card-body ul li .kotak-nilai {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  background-color: var(--scnd-color);
+  border-radius: 30%;
+}
+
+.container.expertise-section .row .card .card-body ul li .kotak-nilai-bisa {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  background-color: var(--pr-color);
+  border-radius: 30%;
+}
+
+.container.expertise-section
+  .row
+  .card
+  .card-body
+  ul
+  li
+  .kotak-nilai-bisa:first-child {
+  margin-left: 20px;
+}
+
+.container.expertise-section .row .note p {
+  color: var(--scnd-color);
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.container.expertise-section .row .note p span {
+  color: var(--pr-color);
+}
+/* End of Expertise Section */

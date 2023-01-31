@@ -22,9 +22,9 @@
       type="image/x-icon"
     />
   </head>
-  <body class="body">
+  <body class="body" id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
       <div class="container">
         <a class="navbar-brand nav-brand" href="#">My <span>Portfolio</span></a>
         <button
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#expertise">Expertise</a>
@@ -59,39 +59,152 @@
     <!-- End Navbar -->
 
     <!-- Hero Section -->
-    <div class="container hero-section">
-      <div class="row">
-        <div class="card bg-transparent">
-          <div class="card-body">
-            <div class="col-lg-6">
-              <h4>Hello, <span>I'm</span></h4>
-              <h2>M. Abdul Rahman</h2>
-              <p>
-                I'm a web developer from Kisaran, Sumatera Utara, Indonesia
-                <span class="fi fi-id"></span>
-              </p>
-              <a class="btn align-items-center" href="#contact">Let's Talk</a>
-            </div>
-            <div class="col-lg-6">
-              <div class="avatar"></div>
+    <section>
+      <div class="container hero-section">
+        <div class="row">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="col-lg-6">
+                <h3>Hello, <span>I'm</span></h3>
+                <h1>M. Abdul Rahman</h1>
+                <p>
+                  I'm a web developer from Kisaran, Sumatera Utara, Indonesia
+                  <span class="fi fi-id"></span>
+                </p>
+                <a class="btn align-items-center" href="#contact">Let's Talk</a>
+              </div>
+              <div class="col-lg-6">
+                <div class="avatar"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row social-media">
-        <p>Check Out My Social Media :</p>
-        <div class="icon">
-          <a href="https://www.instagram.com/abd_rahman.02" target="_blank">
-            <i data-feather="instagram"></i>
-          </a>
+        <div class="row social-media">
+          <p>Check Out My Social Media :</p>
+          <div class="icon">
+            <a href="https://www.instagram.com/abd_rahman.02" target="_blank">
+              <i data-feather="instagram"></i>
+            </a>
 
-          <a href="https://github.com/abdrahman02" target="_blank">
-            <i data-feather="github"></i>
-          </a>
+            <a href="https://github.com/abdrahman02" target="_blank">
+              <i data-feather="github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row arrow">
+          <i data-feather="arrow-down"></i>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End Hero Section -->
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+      <div class="container expertise-section">
+        <div class="row">
+          <h2>My <span>Expertise</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card bg-transparent">
+              <div class="card-body">
+                <h3>Front End Development</h3>
+                <ul>
+                  <li>
+                    <div class="col-lg-6">HTML5</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6">CSS3</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6">Javascript</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai"></div>
+                      <div class="kotak-nilai"></div>
+                      <div class="kotak-nilai"></div>
+                      <div class="kotak-nilai"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6">Bootstrap</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6">TailwindCSS</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai"></div>
+                      <div class="kotak-nilai"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card bg-transparent">
+              <div class="card-body">
+                <h3>Back End Development</h3>
+                <ul>
+                  <li>
+                    <div class="col-lg-6">PHP</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai"></div>
+                      <div class="kotak-nilai"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="col-lg-6">Laravel</div>
+                    <div class="col-lg-6">
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai-bisa"></div>
+                      <div class="kotak-nilai"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="note">
+            <p><span>Note:</span> Ratio range left to right</p>
+          </div>
+        </div>
+        <div class="row arrow">
+          <i data-feather="arrow-down"></i>
+        </div>
+      </div>
+    </section>
+    <!-- End Expertise Section -->
 
     <script src="asset/js/jquery-3.6.3.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
