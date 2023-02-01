@@ -141,6 +141,14 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link.active {
   color: var(--pr-color);
   width: 100px;
   height: 100px;
+  animation: Bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes Bounce {
+  100% {
+    transform: translateY(50px);
+    /* box-shadow: 0 10px 20px 5px var(--pr-color); */
+  }
 }
 /* End of Hero Section */
 
