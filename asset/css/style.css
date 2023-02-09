@@ -20,7 +20,6 @@ body.body {
   background-color: #21272f !important;
   letter-spacing: 0;
   text-shadow: 0 0 1px var(--scnd-color);
-  margin-bottom: 5000px;
 }
 
 .icon {
@@ -300,3 +299,52 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link {
   margin-top: 10px;
 }
 /* End of Contact Section */
+
+/* Footer Section */
+footer {
+  background-color: var(--pr-color);
+  text-align: center;
+  padding: 1rem 0.3rem;
+  margin-top: 3rem;
+}
+
+footer .footer-social-media {
+  padding: 1rem 0;
+}
+
+footer .footer-social-media a {
+  color: var(--scnd-color);
+  margin: 1rem;
+}
+
+footer .footer-social-media a:hover,
+footer .links a:hover {
+  color: #21272f;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: var(--scnd-color);
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: var(--scnd-color);
+}
+
+footer .credit a {
+  text-decoration: none;
+  color: #21272f;
+  font-weight: 700;
+}
+/* End of Footer Section */
+
+
+
+
+
