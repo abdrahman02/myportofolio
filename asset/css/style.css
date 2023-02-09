@@ -147,13 +147,15 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link {
 
 /* Expertise Section */
 .container.expertise-section,
-.container.project-section {
+.container.project-section,
+.container.contact-section {
   padding-top: 90px;
   line-height: 40px;
 }
 
 .container.expertise-section .title h2,
-.container.project-section .title h2 {
+.container.project-section .title h2,
+.container.contact-section .title h2 {
   color: var(--pr-color);
   font-weight: 700;
   text-align: center;
@@ -161,7 +163,8 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link {
 }
 
 .container.expertise-section .title h2 span,
-.container.project-section .title h2 span {
+.container.project-section .title h2 span,
+.container.contact-section .title h2 span {
   color: var(--scnd-color);
 }
 
@@ -269,3 +272,31 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link {
   margin-top: -15px;
 }
 /* End of Project Section */
+
+/* Contact Section */
+.container.contact-section .form-contact {
+  background: linear-gradient(to bottom right, #111418, #21272f);
+  box-shadow: 0 0 10px #111418;
+  padding: 25px;
+  border-radius: 10px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.contact-section .form-contact button {
+  border-radius: 15px;
+  font-weight: 600;
+  color: #21272f;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--pr-color),
+    rgb(19, 176, 211)
+  );
+  box-shadow: 0 1px 10px var(--pr-color);
+  border: none;
+  margin-top: 10px;
+}
+/* End of Contact Section */
