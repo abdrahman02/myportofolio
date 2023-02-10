@@ -31,6 +31,10 @@ body.body {
 }
 
 /* Navbar */
+nav.navbar {
+  background-color: rgba(33, 39, 47, 0.8);
+}
+
 .navbar-brand.nav-brand {
   font-size: 16px;
   margin-top: 25px;
@@ -238,7 +242,6 @@ ul.navbar-nav.mx-auto li.nav-item a.nav-link {
 }
 
 .container.project-section .row .card-project img {
-  /* height: 200px; */
   width: 330px;
   border-radius: 10px;
 }
@@ -344,7 +347,69 @@ footer .credit a {
 }
 /* End of Footer Section */
 
+/* Media Query */
+/* Tablet Besar */
+@media (max-width: 990px) {
+  html {
+    font-size: 75%;
+  }
 
+  .container.expertise-section .row .col-lg-6 .card .card-body ul li {
+    justify-content: space-between;
+  }
 
+  .container.expertise-section .row.arrow {
+    display: none;
+  }
+}
 
+/* Tablet Kecil */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 
+  .container.hero-section {
+    padding-top: 100px;
+  }
+
+  .container.hero-section .row .card .card-body {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .container.hero-section .row .card .card-body .col-lg-6 .avatar {
+    margin: 20px auto 20px auto;
+    width: 220px;
+    height: 220px;
+  }
+
+  .container.hero-section .row.social-media {
+    text-align: center;
+  }
+
+  .container.hero-section .row.arrow,
+  .container.expertise-section .row.arrow {
+    display: none;
+  }
+
+  .container.expertise-section .row .col-lg-6 .card .card-body ul li {
+    justify-content: space-between;
+  }
+
+  .container.contact-section .form-contact {
+    width: auto;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container.contact-section .form-contact {
+    width: 250px;
+  }
+}
