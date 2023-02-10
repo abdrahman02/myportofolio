@@ -1,16 +1,21 @@
-// Menambahkan class active dinamis di navbar
-// 1. ambil semua elemen a dari navbar
-var navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
+// Showing sidebar
+// 1. Ambil kelas navbar-nav nya
+const navbarNav = document.querySelector(".navbar-nav");
 
-// 2. ambil URL saat ini
-var currentUrl = window.location.href;
+// 2. Ketika hamburger menu di klik
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
+// End of Showing Sidebar
 
-// 3. looping setiap elemen a
-navLinks.forEach(function (link) {
-  // 4. jika href sesuai dengan URL saat ini
-  if (link.href === currentUrl) {
-    // 5. tambahkan class active
-    link.classList.add("active");
+// Function for unshowing sidebar when user on click outside of sidebar
+// 1. Ambil id hamburger-menu
+const hamburger = document.querySelector("#hamburger-menu");
+
+// 2. Hapus kelas active ketika user click diluar contain dari hamburger menu
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
   }
 });
-// End of Menambahkan class active dinamis di navbar
+// End of Function for unshowing sidebar when user on click outside of sidebar

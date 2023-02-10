@@ -31,28 +31,71 @@ body.body {
 }
 
 /* Navbar */
-nav.navbar {
-  background-color: rgba(33, 39, 47, 0.8);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(33, 39, 46, 0.8);
+  border-bottom: 1px solid var(--pr-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-.navbar-brand.nav-brand {
-  font-size: 16px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+.navbar .navbar-logo {
+  font-size: 1.8rem;
   font-weight: 700;
+  color: var(--scnd-color);
   font-style: italic;
+  text-decoration: none;
 }
 
-.navbar-brand.nav-brand span {
-  font-size: 16px;
-  font-weight: 700;
+.navbar .navbar-logo span {
   color: var(--pr-color);
 }
 
-ul.navbar-nav.mx-auto li.nav-item a.nav-link {
-  font-size: 16px;
-  font-weight: 300;
+.navbar .navbar-nav {
+  flex-direction: row;
+}
+
+.navbar .navbar-nav a {
   color: var(--scnd-color);
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--pr-color);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--pr-color);
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: var(--scnd-color);
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--pr-color);
+}
+
+#hamburger-menu {
+  display: none;
 }
 /* End of Navbar */
 
@@ -352,6 +395,40 @@ footer .credit a {
 @media (max-width: 990px) {
   html {
     font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #21272f;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2)
   }
 
   .container.expertise-section .row .col-lg-6 .card .card-body ul li {
